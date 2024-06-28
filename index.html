@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOY STORIES</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="image/magic-book.ico" />
+    <style>
+      .nav_1 li a.active {
+        background-color: #ffc107;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JOY STORIES</h1>
+    </header>
+
+    <nav>
+      <ul class="nav_1">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>
+        Welcome to the captivating realm of Joy Stories, where tales of elation,
+        inspiration, and heartwarming journeys come alive. Weaving a tapestry of
+        emotions and experiences, our website is a haven for those seeking the
+        purest essence of joy. Immerse yourself in a world where every narrative
+        is a testament to the resilience of the human spirit, where ordinary
+        moments transform into extraordinary memories, and where the pursuit of
+        happiness is at the core of every tale. Through the pages of Joy
+        Stories, we invite you to explore a myriad of stories that celebrate the
+        triumphs, discoveries, and connections that illuminate our lives. Embark
+        on this enchanting voyage with us, and discover the boundless beauty
+        that can be found in every chapter of the human experience.
+      </h2>
+    </section>
+
+    <div class="books">
+      <a href="AWO’S DREAM FULFILLED.html" class="book">
+        <div class="book1"></div>
+      </a>
+      <a href="The CO’s daughter.html" class="book">
+        <div class="book2"></div>
+      </a>
+      <a href="The Magical Adventure of Toto.html" class="book">
+        <div class="book3"></div>
+      </a>
+      <a href="The Enchanted Forest.html" class="book">
+        <div class="book4"></div>
+      </a>
+      <a href="The Little Prince.html" class="book">
+        <div class="book5"></div>
+      </a>
+      <a href="Alice's Adventures in Wonderland.html" class="book">
+        <div class="book6"></div>
+      </a>
+      <a href="Charlie and the Chocolate Factory.html" class="book">
+        <div class="book7"></div>
+      </a>
+      <a href="Where the Wild Things Are.html" class="book">
+        <div class="book8"></div>
+      </a>
+      <!-- Add more books here -->
+      <a href="The Cat in the Hat.html" class="book">
+        <div class="book9"></div>
+      </a>
+      <a href="Matilda.html" class="book">
+        <div class="book10"></div>
+      </a>
+      <a href="Harry Potter and the Philosopher's Stone.html" class="book">
+        <div class="book11"></div>
+      </a>
+      <a href="Winnie-the-Pooh.html" class="book">
+        <div class="book12"></div>
+      </a>
+      <a href="Peter Pan.html" class="book">
+        <div class="book13"></div>
+      </a>
+      <a href="The Lion, the Witch and the Wardrobe.html" class="book">
+        <div class="book14"></div>
+      </a>
+      <a href="Pippi Longstocking.html" class="book">
+        <div class="book15"></div>
+      </a>
+      <a href="Charlotte's Web.html" class="book">
+        <div class="book16"></div>
+      </a>
+      <a href="The Secret Garden.html" class="book">
+        <div class="book17"></div>
+      </a>
+      <a href="Anne of Green Gables.html" class="book">
+        <div class="book18"></div>
+      </a>
+      <a href="James and the Giant Peach.html" class="book">
+        <div class="book19"></div>
+      </a>
+      <a href="The Tale of Peter Rabbit.html" class="book">
+        <div class="book20"></div>
+      </a>
+      <!-- Add more books here if needed -->
+    </div>
+
+    <footer>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Joy Stories is dedicated to bringing the most heartwarming and
+          inspiring stories to readers of all ages.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Email:
+          <a href="mailto:contact@joystories.com">contact@joystories.com</a>
+        </p>
+      </section>
+      <p>&copy; 2024 Joy Stories. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Navigation link active state
+      document.querySelectorAll(".nav_1 a").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".nav_1 a")
+            .forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

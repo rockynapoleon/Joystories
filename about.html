@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Joy Stories</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="image/magic-book.ico" />
+    <style>
+      .nav_1 li a.active {
+        background-color: #ffc107;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+
+      .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-section {
+        margin-bottom: 30px;
+      }
+
+      .about-section h2 {
+        color: #333;
+        font-size: 24px;
+      }
+
+      .about-section p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .team-member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .team-member img {
+        border-radius: 30%;
+        margin-right: 15px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .team-member h3 {
+        margin: 0;
+        font-size: 20px;
+        color: #333;
+      }
+
+      .team-member p {
+        margin: 5px 0 0;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JOY STORIES</h1>
+    </header>
+
+    <nav>
+      <ul class="nav_1">
+        <li><a href="index.html">HOME</a></li>
+
+        <li><a href="about.html" class="active">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <div class="about-container">
+      <div class="about-section">
+        <h2>Our Mission</h2>
+        <p>
+          At Joy Stories, our mission is to bring the most heartwarming and
+          inspiring stories to readers of all ages. We believe in the power of
+          storytelling to uplift, inspire, and connect people from all walks of
+          life. Our goal is to create a platform where readers can find solace,
+          joy, and motivation through beautifully crafted narratives that
+          celebrate the human spirit.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2>Our Values</h2>
+        <p>
+          We are committed to upholding the following values in everything we
+          do:
+        </p>
+        <ul>
+          <li>
+            <strong>Inclusivity:</strong> We believe that stories have the power
+            to bring people together, regardless of their background or
+            experiences. We strive to feature diverse voices and perspectives in
+            our content.
+          </li>
+          <li>
+            <strong>Quality:</strong> We are dedicated to providing high-quality
+            stories that are well-written, engaging, and thought-provoking. Our
+            team works diligently to ensure that each story meets our standards
+            of excellence.
+          </li>
+          <li>
+            <strong>Community:</strong> We aim to foster a sense of community
+            among our readers by encouraging them to share their own stories,
+            engage with our content, and connect with one another through our
+            platform.
+          </li>
+          <li>
+            <strong>Positivity:</strong> We believe in the power of positivity
+            and seek to highlight stories that inspire hope, joy, and
+            resilience.
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2>Our Team</h2>
+        <div class="team-member">
+          <img src="image/team1.jpg" alt="Team Member 1" />
+          <div>
+            <h3>Abraham Ahiakor</h3>
+            <p>Founder & Editor-in-Chief</p>
+            <p>
+              Abraham has a passion for storytelling and a keen eye for quality
+              writing. With over a decade of experience in the publishing
+              industry, he founded Joy Stories to create a platform dedicated
+              to uplifting narratives.
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="image/team2.jpg" alt="Team Member 2" />
+          <div>
+            <h3>Grace Odu</h3>
+            <p>Senior Writer</p>
+            <p>
+              Grace is a talented writer with a knack for capturing the essence
+              of human experiences. Her stories often explore themes of
+              resilience and connection, resonating deeply with our readers.
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="image/team3.jpg" alt="Team Member 3" />
+          <div>
+            <h3>Mary Johnson</h3>
+            <p>Community Manager</p>
+            <p>
+              Mary is dedicated to fostering a sense of community among our
+              readers. She manages our social media channels, engages with
+              readers, and encourages them to share their own stories.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions, feedback, or would like to share your own
+          story, please don't hesitate to reach out to us. You can contact us
+          via email at
+          <a href="mailto:napeone2921@outlook.com">contact@joystories.com</a>.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Joy Stories. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Navigation link active state
+      document.querySelectorAll(".nav_1 a").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".nav_1 a")
+            .forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

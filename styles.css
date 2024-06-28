@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #f9f4ec;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffc107;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #fff;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:active,
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 70%;
+    height: 800px;
+    background-color: #11111194;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  header {
+    background-color: #ffc107;
+    color: #333;
+    text-align: center;
+    width: 70%;
+    padding: 20px 0;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 15px;
+    transition: 1s;
+    margin-top: 50px;
+  }
+
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 29px;
+  }
+}
+
+/* Section styles */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Book styles */
+.book {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.book1,
+.book2,
+.book3,
+.book4,
+.book5,
+.book6,
+.book7,
+.book8,
+.book9,
+.book10,
+.book11,
+.book12,
+.book13,
+.book14,
+.book15,
+.book16,
+.book17,
+.book18,
+.book19,
+.book20 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  margin-left: 25%;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.book1 {
+  background-image: url("image/book1.jpg"); /* Background image for book 1 */
+}
+
+.book2 {
+  background-image: url("image/book2.jpg"); /* Background image for book 2 */
+}
+
+.book3 {
+  background-image: url("image/book3.jpg"); /* Background image for book 3 */
+}
+
+.book4 {
+  background-image: url("image/book4.jpg"); /* Background image for book 4 */
+}
+
+.book5 {
+  background-image: url("image/book5.jpg"); /* Background image for book 4 */
+}
+
+.book6 {
+  background-image: url("image/book6.jpg"); /* Background image for book 4 */
+}
+
+.book7 {
+  background-image: url("image/book7.jpg"); /* Background image for book 4 */
+}
+
+.book8 {
+  background-image: url("image/book8.jpg"); /* Background image for book 4 */
+}
+
+.book9 {
+  background-image: url("image/book9.jpg"); /* Background image for book 4 */
+}
+
+.book10 {
+  background-image: url("image/book10.jpg"); /* Background image for book 4 */
+}
+
+.book11 {
+  background-image: url("image/book11.jpg"); /* Background image for book 4 */
+}
+
+.book12 {
+  background-image: url("image/book12.jpg"); /* Background image for book 4 */
+}
+
+.book13 {
+  background-image: url("image/book13.jpg"); /* Background image for book 4 */
+}
+
+.book14 {
+  background-image: url("image/book14.jpg"); /* Background image for book 4 */
+}
+
+.book15 {
+  background-image: url("image/book15.jpg"); /* Background image for book 4 */
+}
+
+.book16 {
+  background-image: url("image/book16.jpg"); /* Background image for book 4 */
+}
+
+.book17 {
+  background-image: url("image/book17.jpg"); /* Background image for book 4 */
+}
+
+.book18 {
+  background-image: url("image/book18.jpg"); /* Background image for book 4 */
+}
+
+.book19 {
+  background-image: url("image/book19.jpg"); /* Background image for book 4 */
+}
+
+.book20 {
+  background-image: url("image/book20.jpg"); /* Background image for book 4 */
+}
+.book1:hover,
+.book2:hover,
+.book3:hover,
+.book4:hover,
+.book5:hover,
+.book6:hover,
+.book7:hover,
+.book8:hover,
+.book9:hover,
+.book10:hover,
+.book11:hover,
+.book12:hover,
+.book13:hover,
+.ook14:hover,
+.book15:hover,
+.book16:hover,
+.book17:hover,
+.book18:hover,
+.book19:hover,
+.book20:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+footer {
+  background-color: #ffc107;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer section {
+  margin: 10px 0;
+}

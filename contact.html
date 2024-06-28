@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Joy Stories</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="image/magic-book.ico" />
+    <style>
+      .nav_1 li a.active {
+        background-color: #ffc107;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+
+      .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-section {
+        margin-bottom: 30px;
+      }
+
+      .contact-section h2 {
+        color: #333;
+        font-size: 24px;
+      }
+
+      .contact-section p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .contact-form,
+      .request-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form label,
+      .request-form label {
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      .contact-form input,
+      .contact-form textarea,
+      .request-form input,
+      .request-form textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form button,
+      .request-form button {
+        padding: 10px 20px;
+        border: none;
+        background: #ffc107;
+        color: #333;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .contact-form button:hover,
+      .request-form button:hover {
+        background: #ff9800;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JOY STORIES</h1>
+    </header>
+
+    <nav>
+      <ul class="nav_1">
+        <li><a href="index.html">HOME</a></li>
+
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html" class="active">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-container">
+      <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          We'd love to hear from you! Whether you have a question, feedback, or
+          simply want to get in touch, please fill out the form below or send us
+          an email at
+          <a href="mailto:napeone2921@outlook.com">contact@joystories.com</a>.
+        </p>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-section">
+        <h2>Request a Story</h2>
+        <p>
+          If you have a story idea or a request for a specific type of story
+          you'd like to read on Joy Stories, please fill out the form below. We
+          welcome all story suggestions and will do our best to bring them to
+          life.
+        </p>
+        <form class="request-form">
+          <label for="requester-name">Name</label>
+          <input
+            type="text"
+            id="requester-name"
+            name="requester-name"
+            required
+          />
+
+          <label for="requester-email">Email</label>
+          <input
+            type="email"
+            id="requester-email"
+            name="requester-email"
+            required
+          />
+
+          <label for="story-idea">Story Idea</label>
+          <textarea
+            id="story-idea"
+            name="story-idea"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Joy Stories. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Navigation link active state
+      document.querySelectorAll(".nav_1 a").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".nav_1 a")
+            .forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
